@@ -1,0 +1,20 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.img-sidebar {
+    display: flex;
+    align-self: stretch;
+    grid-column: 1 / 2;
+}
+
+.right {
+    grid-column: 2 / 3;
+}
