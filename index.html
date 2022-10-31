@@ -10,32 +10,45 @@
 <body>
     <div class="img-sidebar container">
         <img class="image" src="img/bryan-dickerson-emuFFTCKIOo-unsplash.jpg">
-        <div class="overlay"><img class="image" src="img/odin-lined.png">ODIN</div>
+        <div class="overlay"><img class="image-overlay" src="img/odin-lined.png">ODIN</div>
         <div class="copyright">Photo by Bryan Dickerson on Unsplash</div>
     </div>
     <div class="right container">
-        <header>This is not a real online service! You know you need something
-            like this in your life to help you realize your deepest dreams. 
+        <header>We'd love to get your input on what you  would like to see here.
             Sign up <em>now</em> to get started.
         </header>
         <div>You <em>know</em> you want to.</div>
         <div>Let's do this!</div>
-        <div class="form container">
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name">
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"> 
-            <label for="phone_number">Phone Number:</label>
-            <input type="tel" id="phone_number" name="phone_number">
-            <label for="user_password">Password:</label>
-            <input class="error" type="password" id="user_password" name="user_password">
-            <label for="confirm_password">Confirm Password:</label>
-            <input class="error" type="password" id="confirm_password" name="confirm_password">
-        </div>
-        <button>Create Account</button>
-        <div>Already have an account? Log in</div>
+        <form action="#" method="get" class="form container">
+            <div class="form-entry">
+                <label  for="first_name">First Name:</label>
+                <input minlength="3" placeholder="John" required type="text" id="first_name" name="first_name">
+            </div>
+            <div class="form-entry">
+                <label  for="last_name">Last Name:</label>
+                <input minlength="3" placeholder="Doe" required type="text" id="last_name" name="last_name">
+            </div>
+            <div class="form-entry">
+                <label  for="email">Email:</label>
+                <input minlength="3" placeholder="John.Doe@email.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" id="email" name="email"> 
+            </div>
+            <div class="form-entry">
+                <label  for="phone_number">Phone Number:</label>
+                <input minlength="3" placeholder="555-555-5555 (include dashes)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required type="tel" id="phone_number" name="phone_number">
+            </div>
+            <div class="form-entry">
+                <label  for="user_password">Password:</label>
+                <input minlength="3" class="error" required type="password" id="user_password" name="user_password">
+            </div>
+            <div class="form-entry">
+                <label  for="confirm_password">Confirm Password:</label>
+                <input minlength="3" class="error" required type="password" id="confirm_password" name="confirm_password">
+            </div>
+        
+            <button type="submit" class="create-account">Create Account</button>
+        </form>
+        <div class="account">Already have an account? <a href="">Log In</a></div>
     </div>
 </body>
 </html>
