@@ -4,6 +4,11 @@ body {
 
 }
 
+@font-face {
+    font-family: Norse-Bold;
+    src: url("/img/Norse-Bold.otf");
+}
+
 .image {
     width: 100%;
     height: auto;
@@ -13,6 +18,35 @@ body {
     display: flex;
     align-self: stretch;
     grid-column: 1 / 2;
+
+    position: relative;
+    text-align: center;
+
+}
+
+.overlay {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: Norse-Bold;
+    font-size: xxx-large;
+    position: absolute;
+
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.copyright {
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+
 }
 
 .right {
